@@ -60,19 +60,14 @@ body{margin: 0;padding: 0;background:#ec224f}
 .talks .contain {display: none}
 .talks .container{display:flex ;height: 500px;overflow:hidden;padding-left: 20px}
 .portfolios{background:#e6e6e6;height: 100%}
-.portfolio{width: 100%;height: 100%;overflow-y: scroll;}
-.portfolio div{position:relative;animation:  20s infinite linear}
+.portfolio{width: 100%;height: 100%;overflow-y: scroll}
 .portfolio img {width: 100%;height: 100%}
 .portfolio::-webkit-scrollbar {
     width: 10px;
 }
-
-/* Track */
 .portfolio::-webkit-scrollbar-track {
     background:rgba(1,1,1,.1); 
 }
-
-/* Handle */
 .portfolio::-webkit-scrollbar-thumb {
     background:rgb(236, 34, 79,.7); 
 }
@@ -89,10 +84,6 @@ body{margin: 0;padding: 0;background:#ec224f}
 #up2:checked ~ .navs #dot2, 
 #up3:checked ~ .navs #dot3 {background: #ec224f}
 .container input {display: none}
-@keyframes test {
-	from{top: 0}
-	to{top:-400%}
-}
 
 
 
@@ -100,31 +91,34 @@ body{margin: 0;padding: 0;background:#ec224f}
 
 
 
-
+.portfolio .lay{width: 100%;height: 100%;position: fixed;
+	background: rgba(1,1,1,.8);z-index: 2;display: none}
+ .review{
+	font-size: 20px;font-family: Titillium Web;font-variant: small-caps;
+	background: #ddd;padding:0 8px;cursor: pointer;margin:  20px;letter-spacing: 1px}
+.review .fa{font-size: 12px;margin: 0 10px}
 .portfolios .text{ 
-	text-align: center; margin: auto;position: a;
-	background:rgba(245,245,245,.8);padding: 10px;width: 30%;height: 50%; }	
+	 margin: auto;border: 1px solid #fff;transform: translate(0, 45%);
+	 padding: 20px;width: 300px;color: #fff}	
 .portfolios .text p {
-	   color: #ec224f ;font-family: tahoma;text-transform: capitalize;
-	   font-weight: bold;letter-spacing: 2px;font-size: 20px;margin: 10px 0}
+	   font-family: Indie Flower;text-transform: capitalize;
+	   letter-spacing: 4px;font-size: 25px;margin: 10px 0;border-bottom: 1px solid}
 .portfolios .text .info {
-	padding-bottom: 20px;font-size: 18px;color: #333;
-	font-family: century gothic;text-transform:none;line-height: 1.5rem}
-.info .fa {color:#ec224f;font-size: 30px;margin:10px 10px 0;transition: .3s ease}
-.info:hover .fa {transform: translateX(20px);transition: .3s ease}
-
-
- 
-
-
+	font-size: 16px;display: block;font-family: century gothic;
+	text-transform:none;line-height: 1.5rem; color: #fff}
+.portfolios .text .info span {
+	font-family: Titillium Web;font-variant: small-caps;font-size: 20px;
+	font-weight: bold;line-height: 2.5rem;padding: 0 10px;letter-spacing: 2px}
+.text a {text-decoration: none;color: #fff;font-family: Indie Flower;font-size: 20px;padding: 0 10px }
+.text a .fa { font-size: 20px;margin:10px 10px 0;transition: .3s ease}
+.text a:hover .fa {transform: translateX(20px);transition: .3s ease}
 
 
 
 @media(max-width:767px){
 	.main{flex-direction: ;flex-wrap: wrap}
 	.main .pic, .main .talks {width: 98%; margin: 1%}
-	.portfolio .text {background: rgba(245,245,245,.5)}
-	.talks .container{flex-direction: column}
+	.talks .container{flex-direction: column;padding: 0}
 	.portfolios{order:2}
 	.container .navs{margin: auto 0;position: relative;background: #fff}
 	.navs label{display:inline-block}
