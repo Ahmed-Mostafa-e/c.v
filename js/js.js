@@ -3,6 +3,10 @@ $(document).ready(function(){
 	$('.pic').fadeIn(1000, function(){$('.talks').animate({left:'0'}, 400, function(){$('.story').animate({left:'0'}, 600, function(){$('.contain').slideDown()})});});
 	
 })
+$('.review').click(function(){
+	$('.lay').slideToggle(200);
+})
+
 var myText = ' " hello, iam ahmed  iam a student at fucalty of commerce iam very interesting in numbers and functions, in late 2017 i started to learn technology languages by myself "self study", i find endless passion while designing pages and coding. "',
 	i = 0;
 setTimeout  (function() {
