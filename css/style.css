@@ -34,16 +34,17 @@ body{margin: 0;padding: 0;background:#ec224f}
 }
 .data h1, .data h2, h3 {
 	font-family: Titillium Web; font-variant: small-caps;
-	letter-spacing: 2px;text-align: center;color: #fff;font-size: 30px}
+	letter-spacing: 2px;text-align: center;color: #eee8aa;font-size: 30px}
 .data h2{font-size: 20px}
 .data h3 {font-size: 20px;color: #fff;text-align: justify;background: rgba(1,1,1,.4);padding: 5px 20px}
-.data p {text-align: center;font-family: century gothic;letter-spacing: 2px;margin: 0 }
-.data span {font-family: century gothic;letter-spacing: 1px;text-transform: capitalize;padding: 5px 20px}
+.data p {text-align: center;font-family: century gothic;letter-spacing: 2px;margin: 0;color: #fff}
+.data span {font-family: century gothic;letter-spacing: 1px;text-transform: capitalize;padding: 5px 20px;color: #fff}
 .data .level i {
 	width: 15px;height: 15px;background: rgba(1,1,1,.3);display: inline-block;
 	margin:5px 10px 0 0;border: 1px solid transparent;border-radius: 50%}
-.data .level i:nth-of-type(1), .data .level i:nth-of-type(2), .data .level i:nth-of-type(3){background: #fff}
-.data .fa {color:#444;margin-right: 5px}
+.data .level i:nth-of-type(1), .data .level i:nth-of-type(2), 
+.data .level i:nth-of-type(3){background:#eee8aa }
+.data .fa {color:#eee8aa;margin-right: 5px}
 
 
 .main .talks {background:rgb(240,240,240);width: 70%;overflow:hidden;position: relative;left: 100% }
@@ -56,18 +57,22 @@ body{margin: 0;padding: 0;background:#ec224f}
 .talks .story p{margin:0 0 10px;font-weight: bold;color: #666;font-size: 15px}
 .talks .story span {font-size: 14px;color: #333}
 .talks .story i p{font-variant: small-caps; font-family:Titillium Web;margin: 10px 0 }
-.talks .story .fa {text-align: center;font-size: 30px;color: #666;margin: 10px 15px}
+.talks .story .fa {text-align: center;font-size: 30px;margin: 10px 15px}
 .talks .contain {display: none}
 .talks .container{display:flex ;height: 500px;overflow:hidden;padding-left: 20px}
 .portfolios{background:#e6e6e6;height: 100%}
 .portfolio{width: 100%;height: 100%;overflow-y: scroll}
+.portfolio div{position:;animation:  20s infinite linear}
 .portfolio img {width: 100%;height: 100%}
 .portfolio::-webkit-scrollbar {
     width: 10px;
 }
+/* Track */
 .portfolio::-webkit-scrollbar-track {
     background:rgba(1,1,1,.1); 
 }
+
+/* Handle */
 .portfolio::-webkit-scrollbar-thumb {
     background:rgb(236, 34, 79,.7); 
 }
@@ -84,7 +89,10 @@ body{margin: 0;padding: 0;background:#ec224f}
 #up2:checked ~ .navs #dot2, 
 #up3:checked ~ .navs #dot3 {background: #ec224f}
 .container input {display: none}
-
+@keyframes test {
+	from{top: 0}
+	to{top:-400%}
+}
 
 
 
@@ -112,7 +120,6 @@ body{margin: 0;padding: 0;background:#ec224f}
 .text a {text-decoration: none;color: #fff;font-family: Indie Flower;font-size: 20px;padding: 0 10px }
 .text a .fa { font-size: 20px;margin:10px 10px 0;transition: .3s ease}
 .text a:hover .fa {transform: translateX(20px);transition: .3s ease}
-
 
 
 @media(max-width:767px){
