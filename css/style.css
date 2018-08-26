@@ -122,7 +122,6 @@ body{margin: 0;padding: 0;background:#ec224f}
 .text a:hover .fa {transform: translateX(20px);transition: .3s ease}
 
 
-
 @media(max-width:767px){
 	.main{flex-direction: ;flex-wrap: wrap}
 	.main .pic, .main .talks {width: 98%; margin: 1%}
